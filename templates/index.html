@@ -1,0 +1,359 @@
+{% extends "layout.html" %}
+
+  {% block temp %}
+    <div id="websiteBody" class="inviteCard" style="display:none;">
+  {% endblock %}
+
+  {% block content %}
+        <div class="title">
+                <h1 style="font-family: 'la_luxesscript'; font-size:400%;">Cathy + Jordan</h1>
+                <br>
+                <h1>Sunday, April 28, 2024</h1>
+                <br>
+                <h2>Terrain in Glen Mills, PA</h2>
+                <h2 id="countdown" style="margin-bottom: 3%;"></h2>
+                
+                
+                <p>RSVP Here: <a href="{% url 'rsvp' %}">Click Me</a></p>
+                <p>Confirm RSVP Details: <a href="{% url 'confirmRSVP' %}">Click Me</a></p>
+
+        </div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h3 style="margin-left: auto;">Story</h3>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body story">
+              <p>When Cathy first moved to Philadelphia for graduate school, she joined several Facebook pages to meet new people and explore the new city. 
+                Jordan courageously commented on one of Cathy's posts and they quickly realized just how much they had in common. 
+                They agreed to have dinner at Mission Taqueria in Center City mid-August 2021. They ended up talking and laughing for five hours! 
+                (Several Margaritas and many tacos were consumed as well). Because Cathy didn't want the night to end, she agreed to the LONG 30 minute walk home 
+                instead of hopping on the subway. 
+                <br>The rest is history :)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h3 style="margin-left: auto;">Fun Facts</h3>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <dl>
+                <dt><strong>Who made the first move?</strong></dt>
+                <dd>Cathy grabbed Jordan's hand on their walk home from their first meetup!</dd>
+                <br>
+                <dt><strong>Who does the cooking in the household?</strong></dt>
+                <dd>Jordan cooks 90% of the meals for the two of them. Cathy's 10% is her signature Sundubu Jjigae and Rmane Noodles</dd>
+                <br>
+                <dt><strong>Where are you two going on your honeymoon?</strong></dt>
+                <dd>Greece to visit the city of Athens and the islands of Santorini and Paros!</dd>   
+                <br>
+                <dt><strong>What is Jordan's favoite Korean meal?</strong></dt>
+                <dd>Sundubu-Jjigae OR Cathy's mother's Bulgogi!</dd>  
+                <br>
+                <dt><strong>Who outlifts who in the gym?</strong></dt>
+                <dd>Cathy takes the prize for legs while Jordan regains some confidence during upper body days.</dd>
+            </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h3 style="margin-left: auto;">Schedule</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>The below applies to any and all who will be attending our wedding.</h6>
+                <dl class="row" style="margin-left: auto; margin-top: 5%;">
+                  <dt class="col-sm-3">4:00 to 4:30 PM</dt>
+                  <dd class="col-sm-9">Guest arrival time</dd>
+                
+                  <dt class="col-sm-3">4:30 to 5:00 PM</dt>
+                  <dd class="col-sm-9">Outdoor wedding ceremony</dd>
+
+                  <dt class="col-sm-3">5:00 to 6:00 PM</dt>
+                  <dd class="col-sm-9">Ceremony concludes followed by cocktail hour</dd>
+
+                  <dt class="col-sm-3">6:00 to 6:45 PM</dt>
+                  <dd class="col-sm-9">Newlywed's first dance and bridal party speeches</dd>  
+                  
+                  <dt class="col-sm-3">6:45 to 8:00 PM</dt>
+                  <dd class="col-sm-9">Seated dinner service with music provided by DJ</dd>
+                  
+                  <dt class="col-sm-3">8:00 to 9:00 PM</dt>
+                  <dd class="col-sm-9">After dinner snacks served and partying</dd>                 
+                  
+                  <dt class="col-sm-3">9:00 to 9:30 PM</dt>
+                  <dd class="col-sm-9">Goodbye's and cleanup</dd>                              
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <h3 style="margin-left: auto;">Dress Code</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <dl>
+                  <dt><strong>Overall:</strong></dt> <dd>Dress code is Semi-Formal</dd>
+                  <dt><strong>Color Scheme:</strong></dt> <dd>Pastel colors to match the season, not too light</dd>
+                  <dt><strong>Men:</Menu></strong></dt> <dd>Blazer, tie or no tie, suit or tux</dd>
+                  <dt><strong>Women:</strong></dt> <dd>Suit, dress, or other semi-formal attire</dd>
+                  <dt><strong>Final Rule:</strong></dt><dd>No White!</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour2" aria-expanded="false" aria-controls="flush-collapseFour2">
+                <h3 style="margin-left: auto;">FAQ</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseFour2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <dl>
+                  <dt><strong>Will there be an open bar?</strong></dt> <dd>Yes! There will be beers, wine and select cocktails</dd>
+                  <dt><strong>Will there be dancing?</strong></dt> <dd>Following dinner there will be an opportunity to dance</dd>
+                  <dt><strong>Are kids/pets allowed? </strong></dt> <dd>No children please unless explcitly given permission. Unfortunately, no furry friends either.</dd>
+                  <dt><strong>What if it rains?</strong></dt> <dd>Terrain has an indoor space for the ceremony. Reception will not change!</dd>
+                  <dt><strong>Do we need to worry over taking our own pictures?</strong></dt> <dd>No! We have a professional photographer and will release the photorgaphs for everyone.</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <h3 style="margin-left: auto;">Venue Info</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <dt><strong>Location</strong></dt><dd>Terrain is located in Glen Mills, PA. Roughly 45 minutes from Manayunk and Ambler.
+                                                    <br>From Ellicott City, Maryland, it is approximately 2 hours.
+                                                    <br>For those traveling from Maryland, please see below for available hotels in the area.</dd>
+                <dt><strong>Parking</strong></dt><dd>On site and free. No reason to stress on transporation to Terrain!</dd>
+                <dt><strong>Shopping</strong></dt><dd>Aside from hosting weddings, Terrain is a plant nursery and cafe. If you have time the prior/following day we recommend both the cafe and shop!</dd>
+                
+                <h4 style="text-decoration: underline; margin-top: 5%;"><strong>Hotel Options:</strong></h4>
+                  <h6>All hotel options are within 1 mile of venue location!</h6>
+                  <dt><a href="https://www.hilton.com/en/hotels/phlcfht-home2-suites-glen-mills-chadds-ford/?SEO_id=GMB-AMER-HT-PHLCFHT&y_source=1_MTQ3MjI5MzItNzE1LWxvY2F0aW9uLndlYnNpdGU%3D">Home2 Suites by Hilton</a></dt><dd>Rooms starting at $160 per night</dd>
+                  <dt><a href="https://www.marriott.com/en-us/hotels/phlvl-residence-inn-philadelphia-glen-mills-concordville/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">Residence Inn by Marriott</a></dt><dd>Rooms starting at $200 per night</dd>
+                  <dt><a href="https://www.bestwestern.com/en_US/book/glen-mills/hotel-rooms/best-western-plus-concordville-hotel/propertyCode.39066.html">Best Western</a></dt><dd>Rooms starting at $125 per night</dd>
+                  <dt><a href="https://www.ihg.com/staybridge/hotels/us/en/glen-mills/phlfd/hoteldetail?cm_mmc=GoogleMaps-_-SB-_-US-_-PHLFD">Staybridge Suties by IHG Hotel</a></dt><dd>Rooms starting at $150 per night</dd>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <h3 style="margin-left: auto;">Registry</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>Please see below to places we have registered!
+                    <br>We thank you so much in advance!</h6><br>
+                    <dt><a href="https://www.crateandbarrel.com/">Crate & Barrel</a></dt>
+                    <dt><a href="https://www.amazon.com/">Amazon</a></dt>
+                    <br><h6>Non-item gifts are also great instead of the above!</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                <h3 style="margin-left: auto;">Bridal Party</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                
+                <!-- bridal party pictures to be cropped to 150x150 pixels-->
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/angela.jpg">
+                      <img src="static/images/bridal-party/angela.jpg" alt="Angela Ji" >
+                    </a>
+                    <div class="desc"><p><strong>Angela Ji</strong><br>Bridesmaid</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/cristy.jpg">
+                      <img src="static/images/bridal-party/cristy.jpg" alt="Cristy Gao" >
+                    </a>
+                    <div class="desc"><p><strong>Cristy Gao</strong><br>Bridesmaid</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/Hayan.jpg">
+                      <img src="static/images/bridal-party/Hayan.jpg" alt="Hayan Kang" >
+                    </a>
+                    <div class="desc"><p><strong>Hayan Kang</strong><br>Bridesmaid</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/eunice.jpg">
+                      <img src="static/images/bridal-party/eunice.jpg" alt="Eunice Nam" >
+                    </a>
+                    <div class="desc"><p><strong>Eunice Nam</strong><br>Maid of Honor</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/esther.jpg">
+                      <img src="static/images/bridal-party/esther.jpg" alt="Esther Shin" >
+                    </a>
+                    <div class="desc"><p><strong>Esther Shin</strong><br>Matron of Honor</p>
+                    </div>
+                  </div>
+                  <br>
+                </div>
+
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/jeff.jpg">
+                      <img src="static/images/bridal-party/jeff.jpg" alt="Jefferson Ta" >
+                    </a>
+                    <div class="desc"><p><strong>Jefferson Ta</strong><br>Groomsman</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/Max.jpg">
+                      <img src="static/images/bridal-party/Max.jpg" alt="Max Doffman" >
+                    </a>
+                    <div class="desc"><p><strong>Max Dolfman</strong><br>Groomsman</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/shaun.jpg">
+                      <img src="static/images/bridal-party/shaun.jpg" alt="Shaun Sebastian">
+                    </a>
+                    <div class="desc"><p><strong>Shaun Sebastian</strong><br>Groomsman</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/Pat.jpg">
+                      <img src="static/images/bridal-party/Pat.jpg" alt="Patrick Serraeo">
+                    </a>
+                    <div class="desc"><p><strong>Patrick Serraeo</strong><br>Groomsman</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="static/images/bridal-party/jrad.jpg">
+                      <img src="static/images/bridal-party/jrad.jpg" alt="Jrad">
+                    </a>
+                    <div class="desc"><p><strong>Jrad</strong><br>Best Man and Officiant</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-bottom: 5%;">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                <h3 style="margin-left: auto;">Pet Quiz</h3>
+              </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="wrapper">
+                  <div id="quiz">
+                    <h6><strong>Test your knowledge of our pets!</strong>
+                    
+                    <p class="questions"></p>
+                    
+                    <div class="answers"></div>         
+                    
+                    <div class="checkAnswers">
+                      <h6 style="margin-top:2%">Correct?</h6>
+                      <div class="checker">
+              
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3" id="passDiv" style="width:50%; margin:auto; margin-top:15%; background-color: transparent;">
+        <label for="password" class="form-label">Enter Password Below:</label>
+        <input type="password" class="form-control" id="password" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onfocus="this.value=''" autofocus style="width: 50%; margin-left: 25%; margin-bottom: 5%;">
+        <button class="btn btn-primary" type="button" id="button-addon1" onclick="validate()">Submit</button>
+        <p id="invalidPass" style="color: red; margin-top: 5%;"></p>
+      </div>
+
+    </div>
+    {% load static %}
+    <script src="{% static 'js/password.js' %}"></script>
+    <!--<script src="../static/password.js"></script>-->
+
+    {% endblock %}
+
