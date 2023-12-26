@@ -18,34 +18,57 @@
 
       <body>
         <div class="title" style="margin-bottom: 0%;">
-          <h1 style="font-size:400%;">S & K Cleaners</h1>
+          <h1 style="font-size:200%;">S & K Cleaners</h1>
           <br>
-          <h1>Dry Cleaning & Tailoring Services</h1>
+          <h3>Dry Cleaning & 
+            <br>Tailoring Services</h3>
           <br>
-          <h4>2833 O'Donnell Street</h4>
-          <h4>Baltimore, MD 21224</h4>
+          <h6>2833 O'Donnell Street
+          <br>Baltimore, MD 21224</h6>
           <a href="https://www.google.com/maps/place/S+%26+K+Cleaners/@39.2798536,-76.5758309,20.25z/data=!4m6!3m5!1s0x89c8038bbb15c4e5:0xeabb7b0cbd750b34!8m2!3d39.27989!4d-76.575691!16s%2Fg%2F1thqbtv6?entry=ttu"><h6 style="font-size: 80%;">Open in Google Maps</h6></a>
           <hr>
         </div>
 
-        <div style="padding: 2%; margin-top: 2%;">
-          <img src="Welcome Desk.jpg" class="img-fluid" alt="Welcome desk image" style="size: 50%;">
+        <div class="card" style="padding: 2%; margin-top: 2%;">
+          <!-- <img src="Welcome Desk.jpg" class="img-fluid" alt="Welcome desk image" > -->
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="max-height: 500px;">
+              <div class="carousel-item active">
+                <img src="Welcome Desk.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="interior.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="exterior.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         
-        <div>
+        <div class="card">
           <p>Full service dry cleaning & tailoring store in the heart of Baltimore.
-          <br>See below for what to expect with your experience.
+          <br>See below for what to expect with your experience!
           </p>
         </div>
 
-        <div class="card" style="margin-top: 2%; margin-bottom: 2%; margin-left: 5%; margin-right: 5%;">
+        <div class="card">
           <div class="card-body">
-            <h6>Services and Pricing</h6>
-            <table class="table table-striped table-hover">
+            <h4>Services and Pricing</h4>
+            <p style="font-style: italic; font-size: 75%; padding-bottom: 0%; margin-bottom: 0%;">D.C. = Dry Clean</p>
+            <table class="table table-sm table-hover">
               <thead>
                 <tr>
                   <th scope="col">Service</th>
-                  <th scope="col">Service</th>
+                  <th scope="col">Description</th>
                   <th scope="col">Cost</th>
                 </tr>
               </thead>
@@ -69,10 +92,16 @@
             </table>
           </div>
         </div>
+        
+        <div class="card">
+          <p>All walk-ins are accepted, no appointments required.
+          <br>Please call if any questions or concerns.
+          </p>
+        </div>
 
-        <div class="card" style="margin-top: 2%; margin-bottom: 2%; margin-left: 5%; margin-right: 5%;">
+        <div class="card">
           <div class="card-body">
-            <h6>Frequently Asked Questions</h6>
+            <h4>Frequently Asked Questions</h4>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <p style="margin-bottom: 0%; padding-bottom: 0%;">Is there a changing room in the store?</p>

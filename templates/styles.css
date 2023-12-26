@@ -10,14 +10,13 @@ body{
   padding-top: 5%;
   padding-left:10%;
   padding-right: 10%;
-  background-image: url('stone_floor_texture.jpg');
-  background-size:75%;
-  background-repeat:repeat;
-  /* background-color: orange; */
+  background-image: url('sage-green-leaves-pattern-aafl475uzmm1hzbz.jpg');
+  /*background-size:75%;
+  background-repeat:repeat;*/
 }
 div{
   text-align: center;
-  background-color: #e2dfdf9f;
+  background-color: #fafafaa6;
   /* box-shadow: 5px 5px 5px black; */
   /* background-image: url('images/gray-texture.jpg'); */
   overflow: hidden;
@@ -28,12 +27,12 @@ div{
   inset 0 -3em 3em rgba(0, 0, 0, 0.1),
   0 0 0 2px rgb(255, 255, 255),
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  background-color: #e2dfdf9f;
+  background-color: #e2dfdf6b;
 }
 
 .title{
   margin-bottom: 5%;
-  background-color: #e2dfdf00;
+  background-color: #e2dfdf6b;
 }
 .story{
   font-size: 16px;
@@ -43,4 +42,16 @@ div{
   font-weight:normal;
   font-style:normal; */
 
+}
+h4{
+  text-decoration: underline;
+}
+h6{
+  font-style: italic;
+}
+.card{
+  margin-top: 2%; 
+  margin-bottom: 2%; 
+  margin-left: 5%; 
+  margin-right: 5%;
 }
