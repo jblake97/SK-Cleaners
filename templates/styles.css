@@ -55,3 +55,9 @@ h6{
   margin-left: 5%; 
   margin-right: 5%;
 }
+th{
+  font-size: 80%;
+}
+td{
+  font-size: 70%;
+}
