@@ -58,6 +58,22 @@
           <br>See below for what to expect with your experience!
           </p>
         </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h4 style="color: grey;">Store Hours</h4>
+            <dl class="row" style="margin-left: 15%;">
+              <dt class="col-sm-5">7:00 A.M. to 7:00 P.M.</dt>
+              <dd class="col-sm-7">Monday - Friday</dd>
+            
+              <dt class="col-sm-5">9:00 A.M. TO 5:00 P.M.</dt>
+              <dd class="col-sm-7">Saturday</dd>
+
+              <dt class="col-sm-5">CLOSED</dt>
+              <dd class="col-sm-7">Sunday</dd>
+            </dl>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-body">
@@ -65,42 +81,49 @@
             <p style="font-style: italic; font-size: 75%; padding-bottom: 0%; margin-bottom: 0%;">D.C. = Dry Clean</p>
             <table class="table table-sm table-hover">
               <thead>
-                <tr>
+                <tr id="0">
                   <th scope="col">Service</th>
                   <th scope="col">Description</th>
-                  <th scope="col">Cost</th>
+                  <th scope="col">Cost ($)</th>
+                  <th scope="col">Quantity</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr id="1">
                   <th scope="row">1</th>
-                  <td>D.C. Shirt</td>
-                  <td>$10</td>
+                  <td class="row-data">D.C. Shirt</td>
+                  <td class="row-data">10</td>
+                  <td class="row-data">
+                    <button id="button+" value="1" onclick=buttonClick(0) style="display:inline">+</button>
+                    <p id="v1" class="quan-data" style="display:inline">0</p>
+                    <button id="button-" value="-1" onclick=buttonClick(1) style="display:inline">-</button>
+                  </td>
                 </tr>
-                <tr>
+                <tr id="2">
                   <th scope="row">2</th>
-                  <td>D.C. Pants</td>
-                  <td>$10</td>
+                  <td class="row-data">D.C. Pants</td>
+                  <td class="row-data">5</td>
+                  <td class="row-data">
+                    <button id="button+" value="1" onclick=buttonClick(0) style="display:inline">+</button>
+                    <p id="v2" class="quan-data" style="display:inline">0</p>
+                    <button id="button-" value="-1" onclick=buttonClick(1) style="display:inline">-</button>
+                  </td>
                 </tr>
-                <tr>
+                <tr id="3">
                   <th scope="row">3</th>
-                  <td>Hem Pants</td>
-                  <td>$10</td>
+                  <td class="row-data">Hem Pants</td>
+                  <td class="row-data">2</td>
+                  <td class="row-data">
+                    <button id="button+" value="1" onclick=buttonClick(0) style="display:inline">+</button>
+                    <p id="v3" class="quan-data" style="display:inline">0</p>
+                    <button id="button-" value="-1" onclick=buttonClick(1) style="display:inline">-</button>
+                  </td>
                 </tr>
               </tbody>
             </table>
+            <p style="display: inline;">Total: </p>
+            <p style="display: inline" id="total">0</p>
           </div>
-        </div>
-        
-        <div class="card">
-          <label for="test1">Test 1:</label>
-          <input type="number" id="test1" name="test1" style="width:50%; margin-left: 25%;">
-
-          <label for="test2">Test 2:</label>
-          <input type="number" id="test2" name="test2" style="width:50%; margin-left: 25%;">
-
-          <button onclick=sumTotal() style="width:fit-content; margin-left: 25%;">Total:</button>
-          <p id="total">test</p>
         </div>
 
         <div class="card">
@@ -130,6 +153,13 @@
                 <p style="font-size: 75%; margin-top: 0%; padding-top: 0%;">We accept cash, check, debit, and all credit cards.</p>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 style="color: grey;">Submit a Question</h4>
+
           </div>
         </div>
 

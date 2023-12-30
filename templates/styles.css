@@ -36,6 +36,7 @@ div{
 }
 h4{
   text-decoration: underline;
+  color: grey;
 }
 h6{
   font-style: italic;
@@ -51,4 +52,11 @@ th{
 }
 td{
   font-size: 70%;
+}
+table{
+  display:inline-table;
+}
+button{
+  width: 15%;
+  height: 15%;
 }
