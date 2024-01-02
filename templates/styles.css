@@ -2,14 +2,14 @@
   font-family: 'apertoregular', Arial, sans-serif;
   font-weight:normal;
   font-style:normal;
-  font-size: 20px;
+  /*font-size: 20px;*/
   color: gray;
 }
 
 body{
   padding-top: 5%;
-  padding-left:5%;
-  padding-right: 5%;
+  padding-left:3%;
+  padding-right: 3%;
   background-image: url('sage-green-leaves-pattern-aafl475uzmm1hzbz.jpg');
   /*background-size:75%;
   background-repeat:repeat;*/
@@ -17,7 +17,7 @@ body{
 div{
   text-align: center;
   background-color: #fafafaa6;
-  /* box-shadow: 5px 5px 5px black; */
+   box-shadow: 2px 2px 2px rgb(196, 191, 191); 
   /* background-image: url('images/gray-texture.jpg'); */
   overflow: hidden;
 }
@@ -49,14 +49,13 @@ h6{
 }
 th{
   font-size: 80%;
+  width: 5%;
 }
 td{
   font-size: 70%;
 }
-table{
-  display:inline-table;
-}
 button{
   width: 15%;
   height: 15%;
+  border: 1px solid;
 }

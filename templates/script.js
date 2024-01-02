@@ -57,3 +57,24 @@ function getRowId() {
 
     return quanId;
 }
+
+function sendMail() {
+    (function () {
+        emailjs.init("-WHLAgw3FXcxzvs9R"); // account public key
+    }) ();
+
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value 
+    }
+
+    var serviceID = "service_jn9bj55"; //serviceID
+    var templateID = "template_qk4e16p"; //templateID
+
+    emailjs.send(serviceID, templateID, params)
+    .then( res => {
+        alert("Email sent successfully!")
+    })
+    .catch();
+}
