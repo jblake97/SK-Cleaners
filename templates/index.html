@@ -17,7 +17,7 @@
 
     <div id="websiteBody" class="inviteCard" style="display:block;">
 
-      <body>
+      <body class="body">
         <div class="title" style="margin-top: 2%;">
           <h1 style="font-size:200%;">S & K Cleaners</h1>
           <br>
@@ -32,7 +32,7 @@
 
         <div class="card" style="padding: 1%; margin-left: 15%; margin-right: 15%;">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" style="max-height: 500px;">
+            <div class="carousel-inner" style="max-height: auto;">
               <div class="carousel-item active">
                 <img src="Welcome Desk.jpg" class="d-block w-100" alt="...">
               </div>
@@ -63,15 +63,15 @@
         <div class="card" style="width: 50%; margin-left: 25%;">
           <div class="card-body">
             <h4 style="color: grey;">Store Hours</h4>
-            <dl class="row" style="margin-left: 15%;">
-              <dt class="col-sm-5">7:00 A.M. to 7:00 P.M.</dt>
-              <dd class="col-sm-7">Monday - Friday</dd>
+            <dl class="row">
+              <dt class="col-sm-5">7 A.M. to 7 P.M.</dt>
+              <dd class="col-sm-7">Mon. - Fri.</dd>
             
-              <dt class="col-sm-5">9:00 A.M. TO 5:00 P.M.</dt>
-              <dd class="col-sm-7">Saturday</dd>
+              <dt class="col-sm-5">9 A.M. TO 5 P.M.</dt>
+              <dd class="col-sm-7">Sat.</dd>
 
               <dt class="col-sm-5">CLOSED</dt>
-              <dd class="col-sm-7">Sunday</dd>
+              <dd class="col-sm-7">Sun.</dd>
             </dl>
           </div>
         </div>
@@ -170,7 +170,7 @@
                   <label for="message">Message</label>
                   <textarea class="form-control" id="message" rows="3" placeholder="Ener message"></textarea>
                 </div>
-                <button class="btn btn-primary" onclick="sendMail()" style="margin-top: 2%;">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="sendMail()" style="margin-top: 2%; width: 80px;">Submit</button>
           </div>
         </div>
 

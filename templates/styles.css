@@ -11,17 +11,16 @@ body{
   padding-left:3%;
   padding-right: 3%;
   background-image: url('sage-green-leaves-pattern-aafl475uzmm1hzbz.jpg');
-  /*background-size:75%;
-  background-repeat:repeat;*/
+  background: size 100%;
+  background-repeat:repeat;
 }
 div{
   text-align: center;
   background-color: #fafafaa6;
-   box-shadow: 2px 2px 2px rgb(196, 191, 191); 
+  box-shadow: 2px 2px 2px rgb(196, 191, 191); 
   /* background-image: url('images/gray-texture.jpg'); */
   overflow: hidden;
 }
-
 .inviteCard{
   box-shadow:
   inset 0 -2em 2em rgba(0, 0, 0, 0.1),
@@ -59,3 +58,37 @@ button{
   height: 15%;
   border: 1px solid;
 }
+dl{
+  font-size: 90%;
+}
+p{
+  font-size: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .body{
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  dl{
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .card{
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+    width: 92% !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .form-group{
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    width: 50% !important;
+  }
+}
+
