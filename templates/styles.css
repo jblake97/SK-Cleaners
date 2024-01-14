@@ -1,5 +1,6 @@
 *{
-  font-family: 'apertoregular', Arial, sans-serif;
+  /*font-family: 'apertoregular', Arial, sans-serif;*/
+  font-family: handlee;
   font-weight:normal;
   font-style:normal;
   /*font-size: 20px;*/
@@ -92,3 +93,19 @@ p{
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .inviteCard{
+    width: 1128px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@font-face{
+  font-family: courgetteFont;
+  src: url('Courgette-Regular.ttf');
+}
+@font-face{
+  font-family: handlee;
+  src: url('Handlee-Regular.ttf');
+}
